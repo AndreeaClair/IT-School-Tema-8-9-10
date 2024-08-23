@@ -1,0 +1,88 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.page-title {
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.page-title h1 {
+  color: var(--text-light);
+  font-size: 56px;
+}
+
+.programe-pregatire h2 {
+  text-align: center;
+  padding: 28px;
+}
+
+p.programe-paragraf {
+  font-size: var(--fs-medium);
+  text-align: center;
+}
+
+.courses-grid .grid-element {
+  padding: 10px;
+}
+
+.courses-grid .course {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: var(--spacing-tiny);
+}
+
+.courses-grid .course .course-image {
+  width: 100%;
+}
+
+.courses-grid .microsoft-logo {
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+  margin-left: var(--spacing-small);
+}
+
+.courses-grid .content {
+  padding: var(--spacing-small);
+}
+
+.courses-grid .content h3 {
+  margin-top: 15px;
+}
+
+.courses-grid .content p {
+  margin-top: 15px;
+  font-size: var(--fs-small);
+  color: #666;
+}
+
+.courses-grid .details {
+  margin-top: 15px;
+  font-size: var(--fs-small);
+  color: #666;
+}
+
+.courses-grid .details > span {
+  margin-right: var(--spacing-small);
+}
+
+.courses-grid .details .material-symbols-outlined {
+  font-size: var(--fs-medium);
+  vertical-align: middle;
+}
+
+.courses-grid .details a {
+  font-size: var(--fs-small);
+  text-align: center;
+  color: white;
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+  padding: var(--spacing-tiny);
+  width: 100px;
+  margin-top: 15px;
+}

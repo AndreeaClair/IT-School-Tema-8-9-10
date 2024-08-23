@@ -1,0 +1,273 @@
+:root {
+  --text-primary: rgb(16, 29, 66);
+  --text-secondary: rgb(251, 180, 76);
+  --text-dark: rgb(43, 41, 34);
+  --text-light: rgb(234, 234, 234);
+
+  --bg-primary: rgb(20, 30, 76);
+  --bg-secondary: rgb(223, 237, 245);
+  --bg-light: white;
+  --bg-dark: rgb(16, 29, 66);
+  /*  */
+  --fs-big: 1.25rem;
+  --fs-h1: 3rem;
+  --fs-regular: 1rem;
+  --fs-small: 0.875rem;
+  --fs-tiny: 0.75rem;
+  /*  */
+
+  --button-color: #2bb686;
+
+  --fs-large: 1rem;
+  --fs-medium: 0.875rem;
+  --fs-small: 0.75rem;
+
+  --spacing-xl: 2.625rem;
+  --spacing-large: 1.75rem;
+  --spacing-medium: 1rem;
+  --spacing-small: 0.5rem;
+  --spacing-tiny: 0.25rem;
+
+  --mobile-logo-height: 45px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: var(--fs-regular);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+h1 {
+  color: var(--text-primary);
+  font-size: var(--fs-h1);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* stilizare nav */
+
+nav {
+  background-color: var(--bg-primary);
+  position: relative;
+}
+
+nav img {
+  width: auto;
+  height: 60px;
+}
+
+nav li {
+  position: relative;
+}
+nav a {
+  color: var(--text-light);
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: var(--fs-tiny);
+
+  position: relative;
+}
+
+nav a:hover {
+  color: var(--text-secondary);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav .arrow-down-icon {
+  position: absolute;
+  bottom: 5px;
+  right: -10px;
+}
+
+nav .aligned-header {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-medium);
+}
+
+nav .secondary-menu {
+  position: absolute;
+  top: calc(100%-10px);
+  left: 15px;
+  background-color: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+
+  display: none;
+}
+
+.courses .grid-element-content {
+  padding: var(--spacing-medium) var(--spacing-small);
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: var(--spacing-tiny);
+}
+
+.courses span {
+  font-size: var(--fs-small);
+  color: var(--text-dark);
+}
+
+.courses .placeholder {
+  background-color: var(--text-secondary);
+  margin-left: var(--spacing-tiny);
+  padding: 5px;
+}
+
+.courses h3 {
+  color: var(--text-primary);
+  font-weight: 400;
+  margin: var(--spacing-medium) var(--spacing-tiny);
+  font-size: 1.5rem;
+}
+
+.courses .content-box {
+  margin: var(--spacing-medium) var(--spacing-tiny);
+}
+
+/* nav .secondary-menu {
+  display: flex;
+} */
+
+nav .about-us-menu:hover .secondary-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/* nav .secondary-menu a {
+  padding: var(--spacing-medium);
+} */
+
+nav a:hover {
+  color: var(--text-secondary);
+}
+
+nav .menu-icon {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  nav .menu-icon {
+    display: block;
+    color: var(--text-light);
+  }
+
+  nav .main-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-dark);
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav .arrow-down-icon {
+    display: none;
+  }
+
+  nav .about-us:hover .secondary-menu {
+    display: none;
+  }
+}
+
+.about-us-section h2,
+.about-us-section p {
+  margin-bottom: var(--spacing-large);
+  text-align: center;
+}
+
+.about-us-section h2 {
+  padding-top: var(--spacing-large);
+}
+
+.about-us-section p {
+  font-size: var(--fs-medium);
+}
+
+.partners h2 {
+  margin-top: var(--spacing-xl);
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 320px;
+
+  margin: 0 auto;
+  padding: var(--spacing-medium);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-element {
+  width: calc(100% / 3);
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .grid-element {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-element {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: var(--bg-primary);
+  padding: 28px;
+  color: var(--text-light);
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 12px;
+}
