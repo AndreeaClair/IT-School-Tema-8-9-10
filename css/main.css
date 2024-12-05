@@ -76,8 +76,6 @@ header {
   width: 100%;
 }
 
-/* stilizare nav */
-
 nav {
   background-color: var(--bg-primary);
   position: relative;
@@ -187,20 +185,14 @@ nav .menu-icon {
   display: none;
 }
 
+nav input[type="checkbox"] {
+  display: none;
+}
+
 @media (max-width: 576px) {
   nav .menu-icon {
     display: block;
     color: var(--text-light);
-  }
-
-  nav .main-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--bg-dark);
-    display: flex;
-    flex-direction: column;
   }
 
   nav .arrow-down-icon {
@@ -209,6 +201,58 @@ nav .menu-icon {
 
   nav .about-us:hover .secondary-menu {
     display: none;
+  }
+
+  nav img {
+    height: var(--mobile-logo-height);
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav .arrow-down-icon {
+    display: none;
+  }
+
+  nav .about-us:hover .submenu {
+    display: none;
+  }
+
+  nav .menu-icon-container {
+    position: relative;
+  }
+
+  nav input[type="checkbox"] {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    opacity: 0;
+
+    margin: 0;
+
+    cursor: pointer;
+  }
+
+  nav input[type="checkbox"]:checked ~ ul {
+    display: block;
+    width: 100%;
+
+    position: fixed;
+    top: calc(var(--mobile-logo-height) + 2 * var(--spacing-medium));
+    left: 0;
+
+    background-color: var(--bg-dark);
   }
 }
 
@@ -257,6 +301,15 @@ nav .menu-icon {
 @media (max-width: 576px) {
   .grid-element {
     width: 100%;
+  }
+  .secondary-menu {
+    display: none !important;
+  }
+
+  .container p img {
+    display: block;
+    margin-top: var(--spacing-medium);
+    margin-left: var(--spacing-small);
   }
 }
 

@@ -12,7 +12,7 @@ body {
 
 .page-title h1 {
   color: var(--text-light);
-  font-size: 56px;
+  font-size: 2rem;
 }
 
 .contact-form {
@@ -33,12 +33,19 @@ p.main-paragraph {
 
 .contact-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .form-column {
   width: 50%;
   padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .form-column {
+    width: 100%;
+  }
 }
 
 .contact-list li {
